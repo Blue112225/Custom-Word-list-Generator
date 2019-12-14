@@ -3,6 +3,10 @@ words = []
 
 while word != "":
     words.append(word)
+    if word.lower() != word:
+        words.append(word.lower())
+    if word.upper() != word:
+        words.append(word.upper())
     word = str(input("Your word (if none, hit enter): "))
     
 passwords = []
